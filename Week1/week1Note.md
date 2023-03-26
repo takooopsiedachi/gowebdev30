@@ -100,3 +100,65 @@ If your Go environment is configured correctly, you should see the following out
 ```
 Hello, Go!
 ```
+
+## Day 2: Learn Go Basics - Part 1
+
+Today, you'll focus on learning the basics of Go, including syntax, data types, and variables.
+
+### Study Go syntax
+
+Understand the basic structure of a Go program, including package declarations, imports, and the main function. A simple Go program looks like this:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, world!")
+}
+```
+
+- `package main`: Every Go program starts with a package declaration. The `main` package is the entry point of the program.
+- `import "fmt"`: This line imports the `fmt` package, which provides functions for formatted I/O.
+- `func main()`: The `main` function is the starting point of the program execution.
+
+### Learn about data types
+
+Study Go's basic data types, including integers, floats, booleans, and strings.
+
+- Integers: `int`, `int8`, `int16`, `int32`, `int64`, `uint`, `uint8`, `uint16`, `uint32`, `uint64`
+- Floats: `float32`, `float64`
+- Booleans: `bool`
+- Strings: `string`
+
+### Understand variables
+
+Learn how to declare and initialize variables in Go, as well as how to use short variable declarations.
+
+1. Declare a variable with a specific type:
+
+```go
+var x int
+```
+
+2. Declare a variable with an initial value:
+
+```go
+var y int = 42
+```
+
+3. Declare a variable without specifying the type (Go will infer the type based on the initial value):
+
+```go
+var z = "Hello"
+```
+
+4. Short variable declaration (available only within a function):
+
+```go
+a := 42
+b := "World"
+```
+
+Now that you have a basic understanding of Go syntax, data types, and variables, continue to practice and explore these concepts.
