@@ -1,4 +1,4 @@
-# 🚀 30-Day GoLang Web Development Plan: Zero to Hero 🦸‍♂️
+# 🚀 30-Day GoLang Web Development Plan: Zero to Hero
 
 This 30-day plan will help you go from zero to hero in Golang web development. Each week, focus on specific topics and tasks to gradually build up your skills. Remember to practice regularly and apply the concepts you learn in small projects.
 
