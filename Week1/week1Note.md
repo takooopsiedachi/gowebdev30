@@ -162,3 +162,258 @@ b := "World"
 ```
 
 Now that you have a basic understanding of Go syntax, data types, and variables, continue to practice and explore these concepts.
+
+## Day 3: Learn Go Basics - Part 2
+
+Today, you'll continue learning Go basics by focusing on constants, loops, and conditionals.
+
+### Learn about constants
+
+Understand the use of constants in Go and how to declare them. Constants are values that cannot be changed once they are initialized.
+
+1. Declare a constant:
+
+```go
+const pi = 3.14159
+```
+
+2. Declare multiple constants at once:
+
+```go
+const (
+    red   = "red"
+    blue  = "blue"
+    green = "green"
+)
+```
+
+### Study loops
+
+Learn about for loops and range in Go, and understand how to use them for iteration.
+
+1. Basic for loop:
+
+```go
+for i := 0; i < 10; i++ {
+    fmt.Println(i)
+}
+```
+
+2. For loop with a condition (similar to a while loop):
+
+```go
+n := 1
+for n < 100 {
+    n *= 2
+}
+```
+
+3. Iterate over a slice or array using range:
+
+```go
+numbers := []int{1, 2, 3, 4, 5}
+for index, value := range numbers {
+    fmt.Printf("Index: %d, Value: %d\n", index, value)
+}
+```
+
+### Understand conditionals
+
+Learn how to use if, else, and switch statements in Go.
+
+1. If statement:
+
+```go
+if x > 0 {
+    fmt.Println("x is positive")
+}
+```
+
+2. If-else statement:
+
+```go
+if y < 0 {
+    fmt.Println("y is negative")
+} else {
+    fmt.Println("y is non-negative")
+}
+```
+
+3. If-else if-else statement:
+
+```go
+if z < 0 {
+    fmt.Println("z is negative")
+} else if z > 0 {
+    fmt.Println("z is positive")
+} else {
+    fmt.Println("z is zero")
+}
+```
+
+4. Switch statement:
+
+```go
+switch color {
+case "red":
+    fmt.Println("The color is red")
+case "blue":
+    fmt.Println("The color is blue")
+case "green":
+    fmt.Println("The color is green")
+default:
+    fmt.Println("Unknown color")
+}
+```
+
+Now that you have learned about constants, loops, and conditionals in Go, continue to practice and explore these concepts.
+
+## Day 4: Learn Go Basics - Part 3
+
+Today, you'll continue learning Go basics by focusing on functions, error handling, and slices.
+
+### Study functions
+
+Learn how to define and call functions in Go, including how to work with multiple return values and named return values.
+
+1. Define a function:
+
+```go
+func greet(name string) {
+    fmt.Printf("Hello, %s!\n", name)
+}
+```
+
+2. Call a function:
+
+```go
+greet("Alice")
+```
+
+3. Function with return value:
+
+```go
+func square(x int) int {
+    return x * x
+}
+```
+
+4. Function with multiple return values:
+
+```go
+func divmod(a, b int) (int, int) {
+    return a / b, a % b
+}
+```
+
+5. Function with named return values:
+
+```go
+func split(sum int) (x, y int) {
+    x = sum / 2
+    y = sum - x
+    return
+}
+```
+
+### Learn about error handling
+
+Understand Go's approach to error handling, and learn how to use the error type and the defer statement.
+
+1. Functions that return errors:
+
+```go
+package main
+
+import (
+	"errors"
+	"fmt"
+)
+
+func divide(a, b int) (int, error) {
+	if b == 0 {
+		return 0, errors.New("division by zero")
+	}
+	return a / b, nil
+}
+
+func main() {
+	result, err := divide(10, 0)
+	if err != nil {
+		fmt.Println("Error:", err)
+	} else {
+		fmt.Println("Result:", result)
+	}
+}
+
+```
+
+2. Check for errors:
+
+```go
+data, err := readFile("file.txt")
+if err != nil {
+    fmt.Println("Error:", err)
+    return
+}
+fmt.Println("Data:", data)
+```
+
+3. Defer statement:
+
+```go
+func processFile(filename string) {
+    file, err := os.Open(filename)
+    if err != nil {
+        fmt.Println("Error:", err)
+        return
+    }
+    defer file.Close()
+
+    // ... process the file ...
+}
+```
+
+### Explore slices
+
+Learn about slices in Go, including how to create, access, and modify them.
+
+1. Create a slice:
+
+```go
+numbers := []int{1, 2, 3, 4, 5}
+```
+
+2. Access elements in a slice:
+
+```go
+fmt.Println(numbers[0]) // 1
+```
+
+3. Modify elements in a slice:
+
+```go
+numbers[1] = 42
+```
+
+4. Slice length and capacity:
+
+```go
+fmt.Println(len(numbers)) // 5
+fmt.Println(cap(numbers)) // 5
+```
+
+5. Create a slice with `make`:
+
+```go
+newSlice := make([]int, 3, 5) // length: 3, capacity: 5
+```
+
+6. Append elements to a slice:
+
+```go
+numbers = append(numbers, 6, 7, 8)
+```
+
+Now that you have learned about functions, error handling, and slices in Go, continue to practice and explore these concepts.
+
