@@ -60,47 +60,6 @@ brew install --cask visual-studio-code
 2. In the settings search bar, type "Go" to filter Go-related settings.
 3. Customize your Go settings as needed. For example, enable "Go: Use Language Server" to use the Go language server for better code intelligence.
 
-### 7. Test your Go environment configuration
-
-To ensure that your Go environment is set up correctly, follow these steps:
-
-1. Create a new directory for your Go workspace:
-
-```bash
-mkdir -p $GOPATH/src/hello
-```
-
-2. Change to the newly created directory:
-
-```bash
-cd $GOPATH/src/hello
-```
-
-3. Create a new file named main.go with the following content:
-
-```go
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Hello, Go!")
-}
-```
-
-4. Build and run the program:
-
-```bash
-go build
-./hello
-```
-
-If your Go environment is configured correctly, you should see the following output:
-
-```
-Hello, Go!
-```
-
 ## Day 2: Learn Go Basics - Part 1
 
 Today, you'll focus on learning the basics of Go, including syntax, data types, and variables.
