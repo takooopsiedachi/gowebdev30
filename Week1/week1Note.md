@@ -417,3 +417,183 @@ numbers = append(numbers, 6, 7, 8)
 
 Now that you have learned about functions, error handling, and slices in Go, continue to practice and explore these concepts.
 
+## Day 5: Study Go packages and imports
+
+### Learn about packages
+
+Understand the concept of packages in Go, and learn how to create and use custom packages.
+
+1. Create a new directory for your package:
+
+```bash
+mkdir -p $GOPATH/src/myproject/mypackage
+```
+
+2. Create a new Go file inside the package directory:
+
+```bash
+touch $GOPATH/src/myproject/mypackage/mypackage.go
+```
+
+3. Define your package and its exported functions:
+
+```go
+package mypackage
+
+func MyFunction() {
+    // ... implementation ...
+}
+```
+
+### Study imports
+
+Learn how to import packages into your Go programs, and understand the difference between local and remote imports.
+
+1. Import a package from the standard library:
+
+```go
+import "fmt"
+```
+
+2. Import a local package:
+
+```go
+import "myproject/mypackage"
+```
+
+3. Import a remote package:
+
+```go
+package main
+
+import (
+    "github.com/gin-gonic/gin"
+)
+
+func main() {
+    router := gin.Default()
+    router.GET("/", func(c *gin.Context) {
+        c.JSON(200, gin.H{
+            "message": "Hello, world!",
+        })
+    })
+    router.Run()
+}
+
+```
+
+## Day 6: Learn about Go's Standard Library
+
+Today, you'll explore common packages in Go's standard library and practice using them in small programs.
+
+### Explore common packages
+
+Study the functionality provided by common packages in Go's standard library, such as `fmt`, `io`, `bufio`, `os`, `strings`, `strconv`, and `time`.
+
+- `fmt`: Provides formatted I/O functions, similar to C's `printf` and `scanf`.
+- `io`: Contains basic interfaces for I/O operations, such as `Reader` and `Writer`.
+- `bufio`: Implements buffered I/O for an efficient reading and writing experience.
+- `os`: Provides functions for working with the operating system, such as file operations and environment variables.
+- `strings`: Contains functions for manipulating strings, such as searching, replacing, and splitting.
+- `strconv`: Provides functions for converting strings to and from other data types, such as integers and floats.
+- `time`: Contains functionality for working with time and dates, such as parsing, formatting, and calculating durations.
+
+### Practice using standard library packages
+
+Write small Go programs to practice using the standard library packages you learned about.
+
+1. Read a file using `os` and `bufio`:
+
+```go
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "os"
+)
+
+func main() {
+    file, err := os.Open("input.txt")
+    if err != nil {
+        fmt.Println("Error opening file:", err)
+        return
+    }
+    defer file.Close()
+
+    scanner := bufio.NewScanner(file)
+    for scanner.Scan() {
+        fmt.Println(scanner.Text())
+    }
+
+    if err := scanner.Err(); err != nil {
+        fmt.Println("Error reading file:", err)
+    }
+}
+```
+
+2. Manipulate strings using `strings` and `strconv`:
+
+```go
+package main
+
+import (
+    "fmt"
+    "strconv"
+    "strings"
+)
+
+func main() {
+    s := "Hello, Gopher!"
+
+    fmt.Println(strings.ToUpper(s))
+    fmt.Println(strings.ReplaceAll(s, "Gopher", "World"))
+
+    n := 42
+    sn := strconv.Itoa(n)
+    fmt.Println("The number is: " + sn)
+}
+```
+
+3. Work with time using `time`:
+
+```go
+package main
+
+import (
+    "fmt"
+    "time"
+)
+
+func main() {
+    now := time.Now()
+    fmt.Println("Current time:", now)
+
+    future := now.Add(72 * time.Hour)
+    fmt.Println("72 hours later:", future)
+
+    layout := "2006-01-02 15:04:05"
+    parsedTime, err := time.Parse(layout, "2023-01-01 00:00:00")
+    if err != nil {
+        fmt.Println("Error parsing time:", err)
+        return
+    }
+    fmt.Println("Parsed time:", parsedTime)
+}
+```
+
+Continue to explore and practice using Go's standard library packages to become more familiar with their functionality and use cases.
+
+## Day 7: Complete Exercises and Practice
+
+Today, you'll focus on practicing your Go skills by completing exercises from online resources.
+
+### Go through the Go Tour
+
+Complete the interactive exercises in the Go Tour (https://tour.golang.org) to reinforce your understanding of Go basics. The Go Tour covers a wide range of topics, from basic syntax and data types to more advanced concepts such as concurrency and interfaces.
+
+### Practice on exercism.io
+
+Work on Go exercises from exercism.io (https://exercism.io/tracks/go) to gain more hands-on experience. Exercism.io offers a variety of coding exercises that cater to different skill levels, from beginner to advanced. By working through these exercises, you'll get a better understanding of Go's features and best practices, and you'll be able to apply what you've learned to real-world projects.
+
+As you practice, don't forget to consult the Go documentation and ask questions in online forums when you encounter challenges. This will help you solidify your knowledge and become more comfortable with Go as a programming language.

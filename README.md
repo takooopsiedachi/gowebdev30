@@ -13,26 +13,26 @@ This 30-day plan will help you go from zero to hero in Golang web development. E
 
 ## 📅 Week 2: Understand web development concepts and fundamentals
 
-1. **Learn HTTP basics**: Understand how the HTTP protocol works, including request methods (GET, POST, PUT, DELETE), status codes, and headers. 🌐
-2. **Study RESTful APIs**: Learn the principles of RESTful API design and implementation. 🛠️
-3. **Learn about JSON**: Study the JSON data format and how to parse and generate JSON using Go's `encoding/json` package. 📄
-4. **Explore HTML and CSS**: Learn the basics of HTML and CSS to create simple web pages and style them. 🎨
+- Learn HTTP basics: Understand the HTTP protocol, including request methods (GET, POST, PUT, DELETE), status codes, and headers.
+- Study RESTful APIs: Learn the principles of RESTful API design and implementation.
+- Learn about JSON: Study the JSON data format and how to parse and generate JSON using Go's encoding/json package.
+- Explore working with databases: Learn how to use Go's database/sql package to work with databases and perform CRUD operations.
 
 ## 📅 Week 3: Learn about Go web frameworks and tools
 
-1. **Study the net/http package**: Understand how to create HTTP servers and clients using Go's built-in `net/http` package. 📚
-2. **Learn about Gorilla Mux**: Study the Gorilla Mux package (https://github.com/gorilla/mux), a popular third-party router and dispatcher for Go. 🦍
-3. **Study Go web frameworks**: Explore popular Go web frameworks like Echo (https://echo.labstack.com/) and Gin (https://github.com/gin-gonic/gin), and choose one to learn more in-depth. 🕸️
-4. **Learn about templating**: Study Go's `html/template` package to create dynamic HTML content. 🎨
-5. **Learn about middleware**: Understand the concept of middleware and how to create and use them in Go web applications. 🔧
+- Study the net/http package: Understand how to create HTTP servers and clients using Go's built-in net/http package.
+- Learn about Gorilla Mux: Study the Gorilla Mux package (https://github.com/gorilla/mux), a popular third-party router and dispatcher for Go.
+- Study Go web frameworks: Explore popular Go web frameworks like Echo (https://echo.labstack.com/) and Gin (https://github.com/gin-gonic/gin), and choose one to learn more in-depth.
+- Learn about middleware: Understand the concept of middleware and how to create and use them in Go web applications.
+- Work with authentication and authorization: Learn how to implement authentication and authorization in your Go web applications.
 
 ## 📅 Week 4: Build a web application and deploy it
 
-1. **Plan a web application**: Come up with a simple project idea, such as a to-do list manager, blog, or image gallery. 💡
-2. **Design your application**: Plan your application's routes, data models, and user interface. 📐
-3. **Implement your application**: Using the skills you've learned, build your web application using Go and your chosen web framework. 🏗️
-4. **Test your application**: Write tests to ensure your application works correctly and handles errors gracefully. 🧪
-5. **Deploy your application**: Learn how to deploy your Go web application to a server or a cloud provider, such as Heroku, AWS, or Google Cloud Platform. ☁️
-6. **Share your work**: Share your project on GitHub or other platforms to receive feedback and showcase your skills. 🌟
+- Plan a web application: Come up with a backend-focused project idea, such as an API for a to-do list manager or a blog.
+- Design your application: Plan your application's routes, data models, and API endpoints.
+- Implement your application: Using the skills you've learned, build your web application using Go and your chosen web framework.
+- Test your application: Write tests to ensure your application works correctly and handles errors gracefully.
+- Deploy your application: Learn how to deploy your Go web application to a server or a cloud provider, such as Heroku, AWS, or Google Cloud Platform.
+- Share your work: Share your project on GitHub or other platforms to receive feedback and showcase your skills.
 
-By following this 30-day plan, you'll gain a solid foundation in Golang web development. Keep practicing and refining your skills to become a Golang web development hero! 💪🦸‍♂️
+By following this updated 30-day plan, you'll gain a solid foundation in Golang backend web development. Keep practicing and refining your skills to become a Golang web development hero! 💪🦸‍♂️
