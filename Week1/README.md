@@ -378,6 +378,10 @@ Now that you have learned about functions, error handling, and slices in Go, con
 
 ## Day 5: Study Go packages and imports
 
+### Go module
+
+🐹 Complete the tutorial at https://go.dev/doc/tutorial/
+
 ### Learn about packages
 
 Understand the concept of packages in Go, and learn how to create and use custom packages.
