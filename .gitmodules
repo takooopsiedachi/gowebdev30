@@ -1,0 +1,3 @@
+[submodule "Week1/Tutorial/Multi-module-workspaces/ws/Week1/Tutorial/Multi-module-workspaces/ws/example"]
+	path = Week1/Tutorial/Multi-module-workspaces/ws/Week1/Tutorial/Multi-module-workspaces/ws/example
+	url = https://go.googlesource.com/example
